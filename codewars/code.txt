@@ -1,0 +1,9 @@
+def order(sentence):
+    mydict=dict()
+    for strSplit in sentence.split():
+        for numChk in strSplit:
+            if numChk.isdigit():
+                mydict[numChk]=strSplit 
+    return ' '.join([(mydict[k]) for k in sorted(mydict.keys())])
+
+(link: https://www.codewars.com/kata/reviews/55c4624d0538cef0df00009c/groups/62b5f5e619a8de000166c95a )
